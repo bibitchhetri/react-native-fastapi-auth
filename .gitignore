@@ -9,6 +9,8 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
+.pnp.*
 
 # Dependencies
 node_modules/
@@ -70,6 +72,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+poetry.lock
 
 # Virtual Environment
 venv/
