@@ -1,0 +1,115 @@
+# ========================================
+# React Native (Frontend) Ignore Rules
+# ========================================
+
+# General
+.DS_Store
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+**/.expo/
+.expo/
+.jest/
+.vscode/
+
+# Build/Artifacts
+android/build/
+android/app/build/
+android/.gradle/
+ios/build/
+ios/Pods/
+ios/*.xcworkspace
+ios/*.xcodeproj/xcuserdata
+ios/*.xcodeproj/project.xcworkspace
+dist/
+coverage/
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Expo
+.expo-shared/
+web-build/
+
+# Metro/Bundler
+metro.config.js
+*.jsbundle
+*.map
+
+# ========================================
+# FastAPI (Backend) Ignore Rules
+# ========================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+ENV/
+env/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# FastAPI Specific
+*.pyc
+*.pyd
+*.pyo
+*.bak
+*.swp
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================================
+# System Files
+# ========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ========================================
+# Docker/Ignore
+# ========================================
+docker-compose.override.yml
+*.dockerignore
+**/.docker/
