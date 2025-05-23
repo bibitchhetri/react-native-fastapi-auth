@@ -62,14 +62,14 @@ docker compose up --build
 ```
 
 This will spin up:
-- A FastAPI app on `http://localhost:8000`
+- A FastAPI app on `http://localhost:8000/docs`
 - A PostgreSQL database container
 
 ---
 
 ## Frontend Setup (React Native)
 
-To run the mobile app:
+To run the mobile app (iOS build):
 
 ```bash
 cd ../frontend
