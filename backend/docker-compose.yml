@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:latest
+    container_name: trinetra-db
+    environment:
+      POSTGRES_USER: trinetra_user
+      POSTGRES_PASSWORD: trinetra_pass
+      POSTGRES_DB: trinetra_db
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - backend-network
+    restart: "no"
+
+  auth-service:
+    build:
+      context: ./auth-service
+    container_name: trinetra-auth
+    env_file:
+      - ./auth-service/.env
+    environment:
+      DATABASE_URL: postgresql://trinetra_user:trinetra_pass@db:5432/trinetra_db
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    networks:
+      - backend-network
+    restart: unless-stopped
+    working_dir: /app
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  db-data:
+
+networks:
+  backend-network:
+

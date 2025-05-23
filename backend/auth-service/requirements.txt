@@ -1,0 +1,11 @@
+fastapi
+pydantic==2.9.2
+pydantic[email]==2.9.2
+pydantic-settings==2.5.2
+uvicorn==0.30.6
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+sqlalchemy
+psycopg2-binary
+python-multipart
+python-secrets
