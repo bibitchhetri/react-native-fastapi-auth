@@ -43,7 +43,7 @@ coverage/
 web-build/
 
 # Metro/Bundler
-metro.config.js
+# metro.config.js
 *.jsbundle
 *.map
 
