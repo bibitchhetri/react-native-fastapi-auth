@@ -1,0 +1,7 @@
+{
+  "name": "MyAppNative",
+  "displayName": "MyAppNative",
+  "plugins": [
+    "expo-secure-store"
+  ]
+}

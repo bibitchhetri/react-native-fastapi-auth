@@ -1,0 +1,6 @@
+module Pods_MyAppNative {
+  umbrella header "Pods-MyAppNative-umbrella.h"
+
+  export *
+  module * { export * }
+}
